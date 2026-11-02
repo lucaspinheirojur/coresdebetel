@@ -29,3 +29,5 @@
 
 header > .button{border-radius:999px}
 
+.contact form#quote{border-radius:26px}#quote input,#quote select,#quote textarea{border-radius:14px}#quote>.button{border-radius:999px}.call-hint{display:block;color:#b4b9b5;font-size:11px;margin-top:9px}
+
