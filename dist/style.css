@@ -30,4 +30,6 @@
 header > .button{border-radius:999px}
 
 .contact form#quote{border-radius:26px}#quote input,#quote select,#quote textarea{border-radius:14px}#quote>.button{border-radius:999px}.call-hint{display:block;color:#b4b9b5;font-size:11px;margin-top:9px}
+/* Bordas e falhas de tinta de uma pincelada */
+.brand-strokes b{clip-path:polygon(9% 5%,31% 1%,39% 5%,64% 0,74% 4%,96% 2%,100% 19%,93% 35%,100% 49%,94% 67%,97% 86%,83% 98%,65% 94%,49% 100%,29% 96%,8% 100%,2% 85%,8% 66%,0 51%,7% 32%,1% 17%);background-image:repeating-linear-gradient(92deg,transparent 0 2px,#ffffff13 2px 2.5px,transparent 2.5px 4px)}
 
