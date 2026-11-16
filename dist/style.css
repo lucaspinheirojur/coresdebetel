@@ -37,3 +37,43 @@ header > .button{border-radius:999px}
 /* Pinceladas maiores, preservando os detalhes da tinta */
 header .brand-strokes,footer .brand-strokes{width:76px;height:58px;gap:1px;align-items:center}header .brand-strokes b,footer .brand-strokes b{width:18px;height:47px;flex-shrink:0}header .brand-strokes b:nth-child(2),footer .brand-strokes b:nth-child(2){height:39px;transform:translateY(5px)}header .brand-strokes b:nth-child(3),footer .brand-strokes b:nth-child(3){height:49px;transform:translateY(2px)}header .brand-strokes b:nth-child(4),footer .brand-strokes b:nth-child(4){height:58px;transform:translateY(-2px)}.contact-art{max-width:450px;width:100%;margin-top:34px;margin-bottom:30px}.contact-art svg{height:200px;overflow:visible}header .brand,footer .brand{gap:17px}@media(max-width:600px){header .brand-strokes,footer .brand-strokes{width:54px;height:46px;gap:0}header .brand-strokes b,footer .brand-strokes b{width:13px;height:36px}header .brand-strokes b:nth-child(2),footer .brand-strokes b:nth-child(2){height:30px}header .brand-strokes b:nth-child(3),footer .brand-strokes b:nth-child(3){height:38px}header .brand-strokes b:nth-child(4),footer .brand-strokes b:nth-child(4){height:45px}header .brand,footer .brand{gap:9px}.contact-art svg{height:auto;min-height:155px}}
 
+
+.services a.wa{white-space:nowrap}
+
+/* Logomarca original do projeto, exibida integralmente. */
+header .brand img.brand-logo,footer .brand img.brand-logo{display:block;width:132px;height:auto;object-fit:contain;flex-shrink:0;background:transparent}
+.hero-brand{position:absolute;top:24px;right:24px;width:120px}
+.hero-brand img{display:block;width:100%;height:auto;object-fit:contain}
+.contact-art{width:100%;max-width:320px;margin:30px 0}
+.contact-art img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:600px){header .brand img.brand-logo,footer .brand img.brand-logo{width:104px}.hero-brand{top:16px;right:16px;width:96px}.contact-art{max-width:280px}}
+/* Proporções da marca e contato sem telefone duplicado na imagem. */
+header .brand img.brand-logo{width:160px}footer .brand img.brand-logo{width:145px}
+.hero-brand{width:155px}.contact-art{max-width:340px;margin:24px 0}
+.contact .phone{display:inline-flex;align-items:center;gap:8px;border:1px solid #5bca91;border-radius:999px;padding:13px 20px;font-size:clamp(22px,2.5vw,32px);letter-spacing:-1px;line-height:1.2;background:#079357;color:#fff}
+@media(max-width:600px){header .brand img.brand-logo{width:125px}footer .brand img.brand-logo{width:130px}.hero-brand{width:125px}.contact-art{max-width:290px}.contact .phone{font-size:25px;padding:13px 18px}}
+.contact-brand{width:340px;max-width:100%;text-align:center}.contact-brand .contact-art{margin:24px auto}.contact-brand .phone{margin-left:auto;margin-right:auto}.contact-brand .phone-label,.contact-brand .call-hint{text-align:center}@media(max-width:600px){.contact-brand{width:290px}}
+
+/* Cabeçalho e faixa completos em telas menores. */
+header > .button{white-space:nowrap}
+@media(max-width:1100px){
+ header{flex-wrap:wrap;column-gap:16px;row-gap:8px}
+ header nav{display:flex;order:3;flex:0 0 100%;justify-content:center;flex-wrap:wrap;gap:8px 24px;padding:8px 0}
+ header nav a{display:inline-flex;align-items:center;min-height:44px}
+}
+@media(max-width:600px){
+ header{display:grid;grid-template-columns:1fr;justify-items:center;gap:8px;padding:14px 5%}
+ header > .button{font-size:11px;padding:14px 20px;max-width:100%}
+ header nav{width:100%;font-size:12px;gap:4px 18px;padding:0}
+ .ticker{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 16px;overflow:visible;white-space:normal;padding:20px 6%;line-height:1.6}
+ .ticker span{min-width:0;font-size:10px;letter-spacing:1px}
+ .ticker b{line-height:1;font-size:22px}
+}@media(min-width:601px) and (max-width:900px){
+ .services{grid-template-columns:1fr}
+ .services article,.services article+article{padding:24px 0;border-left:0}
+ .services p{min-height:0}
+ .contact{grid-template-columns:minmax(0,1fr);gap:30px}
+}
+/* Marca maior no cabeçalho, sem telefone. */
+header .brand img.brand-logo{width:210px;height:auto}
+@media(max-width:600px){header .brand img.brand-logo{width:175px}}
